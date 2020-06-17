@@ -4,20 +4,97 @@
 <head> <!-- Define la cabecera del documento y contiene información del mismo como metadatos, titulo de la pagina. Todo lo que este aquí no es visible por el usuario -->
     <meta charset="UTF-8"> <!--Caracteres latinos-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta name="author" content="Miguel Ángel López López">
     <meta name="description" content="Aqui se pone la descripción del sitio">
     <meta name="keywords" name="palabras clave para que el nevegador busque, van separadas por coma">
-    
-    <title>Estructura de la cabecera</title> <!--Título de la página-->
-    <link rel="icon" href="img/icono.png"> <!--Vinvula hojas de estilo o iconos-->
+    <title>Curso 1 de HTML</title> <!--Título de la página-->
+    <link rel="icon" href="img/icono.png"> <!--iconos-->
 </head>
 <body> <!--Es el cuerpo del sitio web. Todo lo de aquí es visible por los navegadores-->
-   
+
+    <header> Cabezote </header> <!--Sería como la estructura del Título de la página-->
+    <nav> Barra de navegacion </nav> <!--Barra de navegación-->
+    <section> Sección principal </section> <!-- Sección del sitio-->
+    <aside> Columna </aside> <!--Identifica columnas-->
+    <article> Esto es un artículo </article> <!--Escribe articulos-->
+    <h1> Título </h1> <!--Titulos. Va del 1 al 6-->
+    <p> <b>parrafo</b> </p> <!--Etiqueta de parrafo. La etiqueta b resalta en negrillas-->
+    <br> Salto de linea <!--La etiqueta br hace un salto de línea-->
+    <hr> <!--Linea divisora-->
+    <a href="#"> Vínculo </a> <!--Hace un vínculo-->
+    <img src="img/imagen.jpg" alt=""> <!--Etiqueta de una imagen-->
+    <footer> Puede ur derechos de autor </footer> <!--Pie de página -->
+
+    <ol> <!--Lista ordenada-->
+        <li> carro </li> <!--componentes de la lista -->
+        <li> moto </li>
+    </ol>
+
+    <ul> <!--Lista no organizada-->
+        <li> carro </li> <!--componentes de la lista -->
+        <li> moto </li>
+    </ul>
+
+    <table border="1">
+        <!--Primero se ponen los titulos de las columnas-->
+        <tr><!--Filas--> 
+            <th> Columna 1 </th> <!--Columnas-->
+            <th> Columna 2 </th> 
+            <th> Columna 3</th>  
+            <th> Columna ..N </th>
+        </tr>
+
+        <!--A partir de aquí se ponen los valores de cada celda-->
+        <tr><!--Filas--> 
+            <th> Valor C1,1 </th> <!--Columnas-->
+            <th> Valor c2,1 </th>  
+            <th> </th>
+        </tr>
+        <tr><!--Filas--> 
+            <th> Valor 1,2 </th> <!--Columnas-->
+            <th> Valor 2,2 </th>   
+        </tr>  
+    </table>
+
+    <h1>Resultados del examen</h1> <!--Indicare una metrica de forma gráfica-->
+    <p> Carlos: <meter value="95" min="0" max="100" high="90">  </meter> </p>
+    <p> Pepe: <meter value="80" min="0" max="100" high="90">  </meter> </p>
+    <p> Mike: <meter value="15" min="0" max="100" high="90">  </meter> </p>
+    <p> Carl: <meter value="55" min="0" max="100" high="90">  </meter> </p>
+
+    <figure>  <!--Sirve para poner de mejor posición a la imagen (Órden)-->
+        <img src="img/imagen.jpg" alt=""> 
+    </figure>
+    <figcaption> Ciudad </figcaption> <!-- SIrve para pie de página a la imagen -->
+
+    <table border="1">
+    <thead>  <!-- Títulos de la tabla -->
+        <tr><!--Filas--> 
+            <th> Columna 1 </th> <!--Columnas-->
+            <th> Columna 2 </th> 
+            <th> Columna 3</th>  
+        </tr>
+    </thead>
+
+    <tbody> <!--Cuerpo de la tabla-->
+        <tr><!--Filas--> 
+            <td> Valor C1,1 </td> <!--Con td ya no quedan en negrillas-->
+            <td> Valor c2,1 </td>  
+            <td> </td>
+        </tr> 
+    </tbody>
+    </table>
+
+    <h2>Resultados del examen con etiqueta progress</h2>
+    <p> Carlos: <progress value="95" min="0" max="100">  </progress> </p>
+    <p> Pepe: <progress value="80" min="0" max="100">  </progress> </p>
+    <p> Mike: <progress value="15" min="0" max="100">  </progress> </p>
+    <p> Carl: <progress value="55" min="0" max="100">  </progress> </p>
+    <!--En safari u navegadores de moviles no lee meter, por eso usamos progress-->
+
     
 
 
-    
 </body>
 </html>
 
