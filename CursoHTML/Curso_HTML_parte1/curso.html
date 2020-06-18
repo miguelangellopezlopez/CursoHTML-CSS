@@ -12,7 +12,7 @@
 </head>
 <body> <!--Es el cuerpo del sitio web. Todo lo de aquí es visible por los navegadores-->
 
-    <header> Cabezote </header> <!--Sería como la estructura del Título de la página-->
+    <header> Encabezado </header> <!--Sería como la estructura del Título de la página-->
     <nav> Barra de navegacion </nav> <!--Barra de navegación-->
     <section> Sección principal </section> <!-- Sección del sitio-->
     <aside> Columna </aside> <!--Identifica columnas-->
@@ -113,10 +113,23 @@
         <source src="audio/audio.ogg" type="audio/ogg">
     </audio>
 
+    <!-- Etiqueta de video -->
+    <video src=""></video> 
+    <video autoplay controls loop width="500" height="200"></video> <!--Ancho y alto-->
 
+    <video autoplay controls loop width="500" height="200">
+        <!--Formatos de video
+            1.- Theora ogg (.ogv) -- Firefox, Chrome y Opera
+            2.- .MP4 -- Safari,Chrome, Androi, IOS, Safari
+            3.- WEBM .webm --lo leen todos los navegadores excepto safari
+            Se recomienda tambien tener todos los formatos
+        -->
+        <source src="video/video.mp4" type="video/mp4">
+        <source src="video/video.ogv" type="video/ogg">
+        <source src="video/video.webm" type="video/webm">
+    </video>
 
-
- 
+    
     
 
 </body>
