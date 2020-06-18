@@ -92,8 +92,36 @@
     <p> Carl: <progress value="55" min="0" max="100">  </progress> </p>
     <!--En safari u navegadores de moviles no lee meter, por eso usamos progress-->
 
+
+    <!--Etiqueta audio-->
+    <audio src="#"></audio>
+    <audio autoplay src=""></audio> <!--El audio se va a reproducir automaticament-->
+    <audio autoplay controls src=""></audio> <!--control del reproductor de sonido-->
+    <audio autoplay controls loop  src=""></audio>  <!-- EL sonido se reproduce indefinidamente -->
+    <audio autoplay controls loop preload="auto"></audio> <!-- Preload tiene 3 valores: Auto decide si hace o no la precarga de metadatos siempre se carga al cargar la pagina, metadata- informa al navegor que haga la precarga del archivo de audio cuando le demos play-, none- informa la navegador de no hacer la precarga del archivo-. -->
     
 
+
+    <audio autoplay controls loop preload="auto">
+        <!--Formatos de audio:
+            1.- ogg vorbis (.ogg) -- Formato comprimido habilitado para firefox, chrome y opera.
+            2.- MP3 --
+            3.- WAV -- Formato sin compresión. Lo leen casi todos los naveegadores
+            4.- ACC (.m4a, .m4b, .m4p, .mp4, .acc) 
+            Se recomienda traer los 4 formatos en la carpeta de desarrollo
+        -->
+
+        <source src="audio/audio.mp3" type="audio/mp3">
+        <source src="audio/audio.m4a" type="audio/m4a">
+        <source src="audio/audio.ogg" type="audio/ogg">
+
+    </audio>
+
+
+
+
+ 
+    
 
 </body>
 </html>
