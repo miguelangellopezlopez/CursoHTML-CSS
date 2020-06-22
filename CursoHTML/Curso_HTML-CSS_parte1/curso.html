@@ -151,7 +151,70 @@
 
     <center><h2>Formulario</h2>
         <form> 
-            <input type="text" placeholder="Entrada de texto" value=""> <!--Tipo de entrada-->
+            <input type="text" placeholder="Entrada de texto"> <!--Tipo de entrada. -->
+            <br>
+            <input type="text" placeholder="Entrada de texto" value="Miguel"> <!--Value es un valor que quiero en el formulario-->
+            <br>
+            <input type="text" placeholder="Entrada de texto" value="Miguel" readonly> <!--Para bloquear-->
+            
+            <br>
+            <br>
+            <label for="texto">Entrada de texto</label> <!--Nombre del campo. Activa la entrada del formulario-->
+            <input id="texto" type="text" placeholder="Entrada de texto" value="">
+
+            <br>
+            <br>
+            <label for="correo">Entrada de correo</label> <!--Entrada de correo-->
+            <input id="correo" type="email" placeholder="Entrada de correo" value="">
+
+            <br>
+            <br>
+            <label for=pass>Entrada de contraseña</label> <!--Entrada de passwd-->
+            <input id="pass" type="password" placeholder="Entrada de correo" value="" required> <!--Required evito mandar campos vacios-->
+
+            <br>
+            <br>
+            <label>Entrada de numeros</label> <!--Entrada de numeros-->
+            <input type="number" value="0" min="0" max="5"> <!--Valor inicial-->
+
+            <br>
+            <br>
+            <label>Selecciona una opción</label>
+            <select> <!--Para seleccionar opciones-->
+                <option>Opcion 1</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+            </select>
+
+            <br>
+            <br>
+            <label for="rojo">Rojo</label> <!--Checkbox.Selecciona cualquiera (puede ser todos)-->
+            <input id="rojo" type="checkbox">
+           
+            <label for="verde">Verde</label>
+            <input id="verde" type="checkbox">
+           
+            <label for="azul">Azul</label>
+            <input id="azul" type="checkbox">
+
+            <br>
+            <br>
+            <label for="blanco">Blanco</label> <!--Radio. Con name soblo puedo escoger uno.-->
+            <input id="blanco" type="radio" name="Lo que sea">
+
+            <label for="negro">Negro</label>
+            <input id="negro" type="radio" name="Lo que sea" checked> <!--Checked es un valor por default que quiero que tenga una casilla-->
+
+            <br>
+            <br>
+            <input type="submit" value="Enviar formulario">
+
+            <br>
+            <br>
+
+
+
+
 
         </form>
     </center>
