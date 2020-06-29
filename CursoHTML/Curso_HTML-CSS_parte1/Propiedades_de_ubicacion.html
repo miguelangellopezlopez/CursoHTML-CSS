@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Propiedadades de ubicación </title>
 	<style>
-		* /*Selector universal. Para formatear los valores que vienen por defecto en lashojas de estilo*/
+		* /*Selector universal. Para formatear los valores que vienen por defecto en las hojas de estilo*/
 		{
 			margin: 0px;
 			padding: 0; /*Margen interno*/
 			list-style: none;  /*Estilo de las listas*/
 		}
 		
+		/*Cajas Principales*/
+
 		header
 		{
 			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
-			margin: auto; /*Pargen automatico para centrar. La posicion relativa maneja coordenada top, lef*/
+			margin: 20px auto;/*20 px de arriba y abajo y centrado*/
+			/*margin: auto; Pargen automatico para centrar. La posicion relativa maneja coordenada top, lef*/
 				/*margin: 20px 30px; Sería 20 de altura y 30 a la izquierda*/
+				
+				/*margin: top right bottom left;
+				  margin: vertical, horizontal;
+				  margin: valor; --> Este valor se aplica a los 4 margenes
+				  margin: 0 0 0 valor_izquierdo; --> Dando un solo margen*/
+
 			width: 1000px;
 			height: 200px;
 			background: #444;
@@ -25,12 +34,39 @@
 		nav
 		{
 			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
-			margin: auto; /*Pargen automatico para centrar. La posicion relativa maneja coordenada top, lef*/
-				/*margin: 20px 30px; Sería 20 de altura y 30 a la izquierda*/
+			margin: auto; 
 			width: 1000px;
 			height: 48px;
 			background: #AAA;
 		}
+
+		#top
+		{
+			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
+			margin: 20px auto; 
+			width: 1000px;
+			height: 192px;
+			background: #888;
+		}
+
+		section
+		{
+			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
+			margin: auto; 
+			width: 1000px;
+			height: 453px;
+			background: #AAA;
+		}
+
+		footer
+		{
+			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
+			margin: 20px auto; 
+			width: 1000px;
+			height: 70px;
+			background: #888;
+		}
+
 
 	</style>
 </head>
