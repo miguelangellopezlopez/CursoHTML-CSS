@@ -86,7 +86,7 @@
 		{
 			float: left; /*Hace flotar el listado a niver horizontal*/
 			width: 196px;
-			margin: 0 1.99px;
+			margin: 0 2px;
 			height: 48px;
 			background: #333;
 		}
@@ -97,7 +97,21 @@
 			margin: 20px auto; 
 			width: 1000px;
 			height: 192px;
-			background: #888;
+		}
+
+		#top ul
+		{
+			width: 1010px;
+			height: 192px;
+		}
+
+		#top ul li /*Selección a treves de ruta. Aplico el top agregando algunas cosas*/
+		{
+			float: left; 
+			width: 326px;
+			height: 192px;
+			margin-right: 10px; 
+			background: black;
 		}
 
 		section
@@ -109,6 +123,40 @@
 			background: #AAA;
 		}
 
+		/*Nombre de la etiqueta y nombre id*/
+		aside#izq
+		{
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 200px;
+			height: 453px;
+			background: #333;
+		}
+
+		article
+		{
+			position: absolute;
+			left: 200px;
+			top: 0;
+			width: 600px;
+			height: 453px;
+			background: blue;
+		}
+
+		aside#der
+		{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 200px;
+			height: 453px;
+			background: #333;
+		}
+
+
+
+
 		footer
 		{
 			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
@@ -118,7 +166,7 @@
 			background: #888;
 		}
 
-		/*Cajas internas*/
+
 
 
 
@@ -176,7 +224,6 @@
 <!-- Cierra parte Superior -->
 
 <!-- Inicia Sección -->
-
 <section>
     <aside id="izq"></aside> <!--Columna izquierda-->
     <article> </article>
