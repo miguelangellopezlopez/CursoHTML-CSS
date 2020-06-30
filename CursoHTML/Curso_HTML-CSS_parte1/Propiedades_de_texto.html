@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Propiedadades de ubicación </title>
+	<style>
+		* /*Selector universal. Para formatear los valores que vienen por defecto en las hojas de estilo*/
+		{
+			margin: 0px;
+			padding: 0; /*Margen interno*/
+			list-style: none;  /*Estilo de las listas*/
+		}
+		
+		/*Cajas Principales*/
+
+		header
+		{
+			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
+			margin: 20px auto;/*20 px de arriba y abajo y centrado*/
+			/*margin: auto; Pargen automatico para centrar. La posicion relativa maneja coordenada top, lef*/
+				/*margin: 20px 30px; Sería 20 de altura y 30 a la izquierda*/
+				
+				/*margin: top right bottom left;
+				  margin: vertical, horizontal;
+				  margin: valor; --> Este valor se aplica a los 4 margenes
+				  margin: 0 0 0 valor_izquierdo; --> Dando un solo margen*/
+
+			width: 1000px;
+			height: 200px;
+			background: #444;
+		}
+
+		#logo
+		{
+			position: absolute; /*Permite ubicar una caja interna dentro de una caja principal*/
+			/* Puedo jugar con estas posiciones de acuerdo a la posicion que quiera, incluso puedo quitarlas
+			top: 0;
+			right: 0
+			bottom: 0;
+			left: 0;*/
+			top: 30px;
+			right: : 30px;
+			width: 200px;
+			height: 60px;
+			background: #ccc;	
+		}
+
+		.redes
+		{
+			position: absolute; /*Permite ubicar una caja interna dentro de una caja principal. El top y left por default viene en cero*/
+			width: 42px;
+			height: 42px;
+			background: #A8C7;
+			border-radius: 100%;
+		}
+
+		#icono1
+		{
+			top: 42px;
+			right: 120px;
+		}
+
+		#icono2
+		{
+			top: 42px;
+			right: 71px;
+		}
+
+		#icono3
+		{
+			top: 42px;
+			right: 20px;
+		}
+
+		nav
+		{
+			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
+			margin: auto; 
+			width: 1000px;
+			height: 48px;
+			/*background: #AAA;*/
+		}
+
+		.botones
+		{
+			float: left; /*Hace flotar el listado a niver horizontal*/
+			width: 196px;
+			margin: 0 2px;
+			height: 48px;
+			background: #333;
+		}
+
+		#top
+		{
+			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
+			margin: 20px auto; 
+			width: 1000px;
+			height: 192px;
+		}
+
+		#top ul
+		{
+			width: 1010px;
+			height: 192px;
+		}
+
+		#top ul li /*Selección a treves de ruta. Aplico el top agregando algunas cosas*/
+		{
+			float: left; 
+			width: 326px;
+			height: 192px;
+			margin-right: 10px; 
+			background: black;
+		}
+
+		section
+		{
+			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
+			margin: auto; 
+			width: 1000px;
+			height: 453px;
+			background: #AAA;
+		}
+
+		/*Nombre de la etiqueta y nombre id*/
+		aside#izq
+		{
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 200px;
+			height: 453px;
+			background: #333;
+		}
+
+		article
+		{
+			position: absolute;
+			left: 200px;
+			top: 0;
+			width: 600px;
+			height: 453px;
+			background: blue;
+		}
+
+		aside#der
+		{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 200px;
+			height: 453px;
+			background: #333;
+		}
+
+		footer
+		{
+			position: relative; /*Valor relativo: El que se utiliza en las cajas principales*/
+			margin: 20px auto; 
+			width: 1000px;
+			height: 70px;
+			background: #888;
+		}
+
+	</style>
+</head>
+
+<body>
+	<!--El wireframe es la maqueta de la página-->
+
+<!-- Inicia Encabezado -->
+
+<header>
+
+	<div id="logo"></div> <!--Logotipo-->
+
+    <div id="icono1" class="redes"></div>
+    <div id="icono2" class="redes"></div> <!--Redes sociales-->
+    <div id="icono3" class="redes"></div>
+    
+</header>
+
+<!-- Cierra Cabezote -->
+
+<!-- Inicia Barra de Navegación -->
+<nav>
+
+	<ul>  <!--Listado de botones-->
+    
+    	<li class="botones"></li>
+        <li class="botones"></li>
+        <li class="botones"></li>
+        <li class="botones"></li>
+        <li class="botones"></li>
+  
+    </ul>
+
+</nav>
+
+<!-- Cierra Barra de Navegación -->
+
+<!-- Inicia parte Superior (Principal)-->
+<div id="top">
+
+	<ul>
+    	<li></li>
+        
+        <li></li>
+        
+        <li></li>
+    </ul>
+    
+</div>
+
+<!-- Cierra parte Superior -->
+
+<!-- Inicia Sección -->
+<section>
+    <aside id="izq"></aside> <!--Columna izquierda-->
+    <article> </article>
+    <aside id="der"></aside> <!--Columna derecha-->
+</section>
+
+<!-- Cierra Sección -->
+
+<!-- Inicia Pie de Página -->
+
+<footer></footer>
+
+<!-- Cierra Pie de Página -->
+
+
+
+</body>
+</html>
