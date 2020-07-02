@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxis CSS </title>
+    <!--Para vincular css. Debe estar ubicada en la cabecera-->
+    <style>
+        /*
+        Selector: Puede ser el nombre de la etiqueta, id etiqueta, la clase de la etiqueta o atributo de la etiqueta. 
+        
+        Selector
+        {
+            propiedad:valor;
+        }
+
+        */
+        body /*Se le aplica al todo el cuerpo*/
+        {
+            background:red;/*Color del fondo*/
+        }
+
+        #caja /*# Indica que es un id*/
+        {
+            width: 200px; /*Ancho*/
+            height: 200px;  /*Alto*/
+            background: yellow;
+        }
+
+        .grupo /*Esto es una clase. Las clases se aplican a varios elementod*/
+        {
+            width: 200px;
+            height: 200px; 
+            background: blue;
+            margin: 10px; /*Margen*/
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div id="caja">
+        <p>Hola</p>
+    </div>
+
+    <div class="grupo">  </div>
+    <div class="grupo">  </div>
+    <div class="grupo">  </div>
+    
+</body>
+</html>
