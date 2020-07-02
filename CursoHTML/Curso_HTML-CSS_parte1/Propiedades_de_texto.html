@@ -6,6 +6,7 @@
 	<title> Propiedadades de ubicación </title>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 	<style>
 		* /*Selector universal. Para formatear los valores que vienen por defecto en las hojas de estilo*/
 		{
@@ -113,8 +114,27 @@
 			width: 326px;
 			height: 192px;
 			margin-right: 10px; 
-			background: gray;
+			/*background: gray;*/
+			text-align: center;  /*Centrar todo el top*/
 		}
+
+		#top ul li img /*Selección a treves de ruta. Afecta solo a las imágenes*/
+		{
+			border-radius: 100%;
+			height: 100px;
+		}
+
+		#top ul li h1 /*Selección a treves de ruta. Afecta solo a las imágenes*/
+		{
+			font-family: 'Yellowtail', cursive;
+		}
+
+		#top ul li p /*Selección a treves de ruta. Afecta solo a las imágenes*/
+		{
+			font-size: 14px;
+			margin: 10px;
+		}
+
 
 		section
 		{
@@ -122,7 +142,7 @@
 			margin: auto; 
 			width: 1000px;
 			height: 453px;
-			background: #AAA;
+			/*background: #AAA;*/
 		}
 
 		/*Nombre de la etiqueta y nombre id*/
@@ -143,7 +163,27 @@
 			top: 0;
 			width: 600px;
 			height: 453px;
-			background: blue;
+			/*background: blue;*/
+		}
+
+		article h1
+		{
+			font-family: 'Yellowtail', cursive;
+			font-size: 40px;
+			margin: 20px;
+		}
+
+		article p
+		{
+			margin: 5px 10px;
+			font-size: 14px;
+			text-align: justify; /*Texto justificado*/
+		}
+
+		article p img
+		{
+			float: left;
+			margin-right: 10px;
 		}
 
 		aside#der
@@ -162,14 +202,17 @@
 			margin: 20px auto; 
 			width: 1000px;
 			height: 70px;
-			background: #888;
+			background: rgba(100,0,255,1);
+			text-align: center;
+			line-height: 70px; 
+			color: white;
 		}
 
 	</style>
 </head>
 
 <body>
-	<!--El wireframe es la maqueta de la página-->
+<!--El wireframe es la maqueta de la página-->
 
 <!-- Inicia Encabezado -->
 
@@ -250,7 +293,7 @@
 <!-- Inicia Pie de Página -->
 
 <footer> 
-	<center> &copy; Todos los derechos reservados </center>
+	&copy; Todos los derechos reservados
 </footer>
 
 <!-- Cierra Pie de Página -->
