@@ -1,0 +1,47 @@
+/*Global*/
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box; /*Asegura que el relleno y el borde estan incluidos en el ancho total y la altura total de los elementos */
+}
+
+.contenedor
+{
+	position: relative;
+	margin: auto; /*Para que se pueda centrar*/
+	width: 100%;
+	height: auto;
+}
+
+.fila{
+	position: relative;
+	margin: auto; /*Para que se pueda centrar*/
+	width: 100%;
+	height: auto;
+}
+
+.col-12
+{
+	width: 100%;
+	background: red;
+	border:1px solid black;
+}
+
+.col-6{
+	float: left;
+	width: 50%;
+	border:1px solid black;
+}
+
+.col-4{ /*por que son 12 columnas y quiero dividirlas entre 3 da 4*/
+	float: left;
+	width: 33.33333333%;  /*Boostrap recomienda 8 decimales*/
+	/*background: green;*/
+	border:1px solid black;
+}
+
+
+
