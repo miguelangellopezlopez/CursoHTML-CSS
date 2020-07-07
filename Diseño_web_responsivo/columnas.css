@@ -21,27 +21,65 @@
 	margin: auto; /*Para que se pueda centrar*/
 	width: 100%;
 	height: auto;
+	/*Las columnas dentro de una fila están flotando a la izquierda, y por lo tanto se toman fuera del flujo de la página, y otros elementos serán colocados como si no fueran de las columnas. Para evitar esto, vamos a añadir un estilo que despeja el flujo*/
+	clear: both; /*Hace limpieza que respete solo las cajas flotantes de esa fila*/
+	display: table; /*Respeta el área de las columnas. Suman altura*/
 }
 
-.col-12
-{
+[class *="col-"]
+{ /*Esta selleccion me ayuda a incrustar estas caracteristicas a las clases que inicien con "col"*/
+	float: left;
+	border:1px solid black;
+	padding: 20px;
+}
+
+.col-12{
 	width: 100%;
-	background: red;
-	border:1px solid black;
 }
 
-.col-6{
-	float: left;
+.col-11{
+	width: 91.66666666%;
+}
+
+.col-10{
+	width: 83.33333333%;
+}
+
+
+.col-9{
+	width: 75%;
+}
+
+.col-8{
+	width: 66.66666666%;
+}
+
+.col-7{
+	width: 58.33333333%;
+}
+
+.col-6{ 
 	width: 50%;
-	border:1px solid black;
+
 }
 
-.col-4{ /*por que son 12 columnas y quiero dividirlas entre 3 da 4*/
-	float: left;
+.col-5{
+	width: 41.66666666%;
+}
+
+.col-4{
+	
 	width: 33.33333333%;  /*Boostrap recomienda 8 decimales*/
-	/*background: green;*/
-	border:1px solid black;
 }
 
+.col-3{
+	width: 25%;
+}
 
+.col-2{
+	width: 16.66666666%;
+}
 
+.col-1{
+	width: 8.33333333%;
+}
